@@ -6,6 +6,6 @@
  * @package		Navigation
  * @author		David Stutz
  * @copyright	(c) 2012 David Stutz
- * @license		http://www.gnu.org/licenses/gpl-3.0
+ * @license		http://opensource.org/licenses/bsd-3-clause
  */
 class Navigation_Driver_Item extends Kohana_Navigation_Driver_Item {}

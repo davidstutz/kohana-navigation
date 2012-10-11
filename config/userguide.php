@@ -5,8 +5,8 @@
  * 
  * @package		Navigation
  * @author		David Stutz
- * @since		1.0.0
  * @copyright	(c) 2012 David Stutz
+ * @license		http://opensource.org/licenses/bsd-3-clause
  */
 return array(
 	'modules' => array(
