@@ -8,7 +8,7 @@
  * @copyright	(c) 2012 David Stutz
  * @license		http://opensource.org/licenses/bsd-3-clause
  */
-class Kohana_Navigation_Driver_Space extends Navigation_Driver
+class Kohana_Navigation_Driver_Space extends Kohana_Navigation_Driver
 {
 	/**
 	 * @var	string	used view
