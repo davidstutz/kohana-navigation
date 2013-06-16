@@ -2,10 +2,10 @@
 
 /**
  * Navigation exception.
- * 
+ *
  * @package		Navigation
  * @author		David Stutz
- * @copyright	(c) 2012 David Stutz
+ * @copyright	(c) 2013 David Stutz
  * @license		http://opensource.org/licenses/bsd-3-clause
  */
 class Kohana_Navigation_Exception extends Kohana_Exception {}

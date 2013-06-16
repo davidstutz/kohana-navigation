@@ -5,6 +5,6 @@
  * @author David Stutz
  */
 ?>
-<li class="<?php echo Navigation::classes('item'); if ($item->breadcrumb) echo ' ' . Navigation::classes('active'); ?>">
+<li <?php if ($item->breadcrumb) echo 'class="active"'; ?>>
 	<?php echo HTML::anchor($item->uri, __($item->label), ( is_null($item->attributes) ? array() : $item->attributes )); ?>
 </li>

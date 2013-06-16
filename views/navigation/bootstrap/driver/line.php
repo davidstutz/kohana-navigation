@@ -3,4 +3,4 @@
  * @author David Stutz
  */
 ?>
-<li class="<?php echo Navigation::classes('space'); ?>"></li>
+<li class="divider"></li>
