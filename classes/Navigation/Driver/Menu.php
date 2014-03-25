@@ -7,7 +7,7 @@
  * 
  * @package		Navigation
  * @author		David Stutz
- * @copyright	(c) 2013 David Stutz
+ * @copyright	(c) 2013 - 2014 David Stutz
  * @license		http://opensource.org/licenses/bsd-3-clause
  */
 class Navigation_Driver_Menu extends Kohana_Navigation_Driver_Menu {}

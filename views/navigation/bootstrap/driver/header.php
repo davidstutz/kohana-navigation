@@ -6,5 +6,5 @@
  */
 ?>
 <li class="nav-header">
-	<?php echo __($item->label); ?>
+	<?php echo $item->label; ?>
 </li>

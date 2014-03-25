@@ -55,8 +55,7 @@ This is made simple with the module's breadcrumb system:
 	$this->tempalte->navigation->add('about', 'item', $options);
 	// ...
 	/* Now in your controller/action. */
-	public function action_about()
-	{
+	public function action_about() {
 		/* Load your view etc... */
 		$this->template->navigation->breadcrumb('about');
 	}

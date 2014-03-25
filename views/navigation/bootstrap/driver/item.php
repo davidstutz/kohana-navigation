@@ -6,5 +6,5 @@
  */
 ?>
 <li <?php if ($item->breadcrumb) echo 'class="active"'; ?>>
-	<?php echo HTML::anchor($item->uri, __($item->label), ( is_null($item->attributes) ? array() : $item->attributes )); ?>
+	<?php echo HTML::anchor($item->uri, $item->label, ( is_null($item->attributes) ? array() : $item->attributes )); ?>
 </li>
