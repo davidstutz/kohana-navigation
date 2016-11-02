@@ -3,10 +3,10 @@
 /**
  * Factory for the menu class
  *
- * @package		Navigation
- * @author		David Stutz
- * @copyright	(c) 2013 David Stutz
- * @license		http://opensource.org/licenses/bsd-3-clause
+ * @package     Navigation
+ * @author      David Stutz
+ * @copyright   (c) 2013 - 2016 David Stutz
+ * @license     http://opensource.org/licenses/bsd-3-clause
  */
 class Kohana_Navigation {
 
@@ -15,8 +15,8 @@ class Kohana_Navigation {
     /**
      * Create new navigation.
      *
-     * @param	string	alias
-     * @return	object	menu
+     * @param    string    alias
+     * @return    object    menu
      */
     public static function instance($name) {
         if (!isset(Navigation::$instances[$name])) {
@@ -33,8 +33,8 @@ class Kohana_Navigation {
     /**
      * Will return class for requested element.
      *
-     * @param	string	element
-     * @return	string	class
+     * @param    string    element
+     * @return    string    class
      */
     public static function classes($string) {
         $classes = Kohana::$config->load('navigation.classes');

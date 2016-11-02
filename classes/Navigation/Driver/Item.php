@@ -3,9 +3,9 @@
 /**
  * Driver for normal menu item.
  * 
- * @package		Navigation
- * @author		David Stutz
- * @copyright	(c) 2013 - 2014 David Stutz
- * @license		http://opensource.org/licenses/bsd-3-clause
+ * @package     Navigation
+ * @author      David Stutz
+ * @copyright   (c) 2013 - 2016 David Stutz
+ * @license     http://opensource.org/licenses/bsd-3-clause
  */
 class Navigation_Driver_Item extends Kohana_Navigation_Driver_Item {}

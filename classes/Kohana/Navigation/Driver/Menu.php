@@ -5,10 +5,10 @@
  *
  * A Menu can be filled with different items, specified by their drivers.
  *
- * @package		Navigation
- * @author		David Stutz
- * @copyright	(c) 2013 - 2014 David Stutz
- * @license		http://opensource.org/licenses/bsd-3-clause
+ * @package     Navigation
+ * @author      David Stutz
+ * @copyright   (c) 2013 - 2016 David Stutz
+ * @license     http://opensource.org/licenses/bsd-3-clause
  */
 class Kohana_Navigation_Driver_Menu extends Navigation_Driver {
 
@@ -169,7 +169,7 @@ class Kohana_Navigation_Driver_Menu extends Navigation_Driver {
      *
      * @return <string> rendered
      */
-    public function render() {
+    public function render($theme = NULL) {
         if (!function_exists('items_cmp')) {
             /**
              * Method for comparison of two menu items using the order options.
@@ -194,8 +194,12 @@ class Kohana_Navigation_Driver_Menu extends Navigation_Driver {
 
         /* Sort items using custom mehtod. */
         uasort($this->_options['items'], 'items_cmp');
-
-        return View::factory('navigation/' . Kohana::$config->Load('navigation.theme') . '/driver/' . $this->_view, array('item' => $this))->render();
+        
+        if ($theme === NULL) {
+            $theme = Kohana::$config->Load('navigation.theme');
+        }
+        
+        return View::factory('navigation/' . $theme . '/driver/' . $this->_view, array('item' => $this, 'theme' => $theme))->render();
     }
 
 }
